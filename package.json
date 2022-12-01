@@ -1,0 +1,53 @@
+{
+    "private": false,
+    "name": "ts-npm-starter",
+    "version": "1.0.0",
+    "description": "NPM package template for Node with typescript.",
+    "main": "dist/src/index.js",
+    "types": "dist/src/index.d.ts",
+    "directories": {
+        "lib": "dist",
+        "test": "test"
+    },
+    "scripts": {
+        "start": "npx ts-node ./src/index.ts",
+        "dev": "nodemon ./src/index.ts",
+        "build": "npx tsc",
+        "test": "jest",
+        "west": "jest --watch",
+        "prepare": "npm run build"
+    },
+    "engines": {
+        "node": ">=12.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/0xAndrewBlack/ts-npm-starter.git"
+    },
+    "keywords": [
+        "npm",
+        "starter",
+        "tempalte",
+        "ts",
+        "api",
+        "node"
+    ],
+    "author": "0xAndrewBlack",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/0xAndrewBlack/ts-npm-starter/issues"
+    },
+    "homepage": "https://github.com/0xAndrewBlack/ts-npm-starter#readme",
+    "devDependencies": {
+        "@babel/core": "^7.18.6",
+        "@babel/preset-env": "^7.18.6",
+        "@babel/preset-typescript": "^7.18.6",
+        "@types/jest": "^28.1.4",
+        "babel-jest": "^28.1.2",
+        "jest": "^28.1.2",
+        "nodemon": "^2.0.19",
+        "ts-node": "^10.8.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^4.7.4"
+    }
+}
